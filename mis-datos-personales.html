@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<style>
+    .DEB{
+        padding: 10px;
+        background-color: aqua;
+    }
+    .labels{
+        display: block;
+        align-items: center;
+    }
+    .inputs{
+        display: block;
+    }
+</style>
+<body>
+    <a href="index.html">Inicio</a>
+    <main>
+        <h1 style="padding: 10px;">DANIEL ESTEBAN BARRAGÁN</h1>
+        <form class="DEB" action="">
+            <label class="labels" for="nombre">
+                <span style="margin-left: 45%;" class="cosas" >Nombre</span>
+                <input style="margin-left: 35%;" class="inputs"  type="text" id="nombre" name="nombre"
+                placeholder="Tu nombre"/>
+            </label>
+            <br>
+            <hr>
+            <label class="labels" for="inicio sistemas">
+                <span style="margin-left: 39%;" class="cosas" >Fecha de nacimiento</span>
+                <input class="inputs"  type="date" id="inicio sistemas" name="fecha"/>
+            </label>
+            <br>
+            <hr>
+            <label class="labels" for="horario">
+                <span class="cosas" >¿En que horario estudias?</span>
+                <input class="inputs"  type="time" id="horario" name="hora">
+            </label>
+            <br>
+            <hr>
+            <select name="materias" id="">
+                <option value="Pracitca">practica</option>
+                <option value="teoria">teoria</option>
+                <option value="teleatica">telematica</option>
+            </select>
+            <br>
+            <hr>
+            <input list="materias">
+            <datalist id="materias">
+                <option value="pracitca"></option>
+                <option value="teoria"></option>
+                <option value="teleatica"></option>
+            </datalist>
+            <input type="submit" value="Enviar"><!--solo para formularios(envio de información)-->
+            <button>Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
